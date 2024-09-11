@@ -1,0 +1,33 @@
+header{
+    position:relative;
+    background-color: #333;
+    text-align: center;    
+    color: #fff;
+     
+}
+.img{
+    text-align: center;
+}
+.pie{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+.dates{
+    
+    margin: 10px;
+    padding: 5px;
+    border: #333;
+    
+
+}
+
+footer {
+    padding: 2rem;
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}

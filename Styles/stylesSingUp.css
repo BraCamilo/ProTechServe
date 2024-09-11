@@ -1,0 +1,57 @@
+body{
+    background-color: #D7D9D9;
+}
+#Logo {
+    float: left;
+    margin-right: 20px;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+a:link{
+    color: rgb(240, 240, 240);
+}
+a:visited{
+    color: rgb(75, 75, 75);
+}
+a:hover{
+    color: rgba(0, 0, 255, 0.493);
+}
+a:active{
+    color: green;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;    
+}
+
+main {
+    padding: 20px;
+}
+form.inputs{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  #singUp{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

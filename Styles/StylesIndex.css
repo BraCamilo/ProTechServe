@@ -1,0 +1,110 @@
+#Logo {
+    float: left;
+    margin-right: 20px;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+a:link{
+    color: rgb(240, 240, 240);
+}
+a:visited{
+    color: rgb(75, 75, 75);
+}
+a:hover{
+    color: rgba(0, 0, 255, 0.493);
+}
+a:active{
+    color: green;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    border: #333;
+    margin: 30px 40px 10px 80px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section.login {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+}
+input[type="remember-me"] {
+    margin-left: 10px;
+}
+
+section.login h2 {
+    margin-top: 0;
+}
+
+section.login form {
+    margin-top: 20px;
+}
+
+section.login label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+section.login input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section.login input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+section.login a {
+    text-decoration: none;
+    color: #333;
+}
+
+section.login button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+
+}
+
+section.login p {
+    margin-top: 10px;
+    text-align: right;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
