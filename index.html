@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProTech Serve - Crea tu Perfil</title>
     <link rel="stylesheet" href="/style.css">
-    <style></style>
 </head>
 <body>
     <header>
-        <h1>ProTech Serve</h1>
+        <div class="titulo">
+            <img id="Logo" src="/Assets ProTechServe/Logo.png" alt="Logo">
+            <h1>ProTech Serve</h1>
+        </div>
         <p>Conecta con profesionales y programa tus citas fácilmente</p>
     </header>
 
@@ -24,9 +26,9 @@
     <main>
         <section>
             <h2>Crea tu Perfil</h2>
-            <form>
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            <form id="formulario">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" required>
 
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
@@ -40,7 +42,7 @@
                     <option value="cliente">Cliente</option>
                 </select>
 
-                <button type="submit">Crear Perfil</button>
+                <button id="botonDeInicio" type="submit">Iniciar Sesión</button>
             </form>
         </section>
     </main>
@@ -48,5 +50,6 @@
     <footer>
         <p>&copy; 2024 ProTech Serve. Todos los derechos reservados.</p>
     </footer>
+    <script src="/Scripts/script.js"></script>
 </body>
 </html>
