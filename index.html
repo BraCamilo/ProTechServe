@@ -17,34 +17,47 @@
     </header>
 
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Crear Perfil</a>
-        <a href="#">Profesionales</a>
+        <a href="#">Sobre Nosotros</a>
         <a href="#">Contacto</a>
     </nav>
 
     <main>
-        <section>
-            <h2>Crea tu Perfil</h2>
+        <!-- inicio de sesion -->
+        <section id="inicio-de-sesion">
+            <h2>Inicio de sesión</h2>
             <form id="formulario">
-                <label for="name">Nombre completo:</label>
-                <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" required>
-
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                <input type="email" id="email-inicio" name="email" placeholder="Tu correo electrónico" required>
 
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <input type="password" id="password-inicio" name="password" placeholder="Contraseña" required>
 
-                <label for="tipo-perfil">Selecciona tu tipo de perfil:</label>
-                <select id="tipo-perfil" name="tipo-perfil">
+                <label for="tipo-perfil-inicio">Selecciona tu tipo de perfil:</label>
+                <select id="tipo-perfil-inicio" name="tipo-perfil">
                     <option value="profesional">Profesional</option>
                     <option value="cliente">Cliente</option>
                 </select>
-
                 <button id="botonDeInicio" type="submit">Iniciar Sesión</button>
             </form>
         </section>
+        <!-- Creacion de perfil -->
+         <section id="creacion-de-perfil">
+            <h2>Vamos a Crear tu Peril</h2>
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" required>
+
+            <label for="email">Agrega un correo:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+            <label for="password">Elabora una poderosa contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            
+            <label for="tipo-perfil">Selecciona tu tipo de perfil:</label>
+            <select id="tipo-perfil" name="tipo-perfil">
+                <option value="profesional">Profesional</option>
+                <option value="cliente">Cliente</option>
+            </select>
+         </section>
     </main>
 
     <footer>
