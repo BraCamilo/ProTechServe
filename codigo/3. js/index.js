@@ -18,22 +18,23 @@ class usuario{
 
 /* Funciones globales */
 window.addEventListener('load', inicio)
-function atrasInicio(){
-    atras.addEventListener('click', inicio)
-}
 /* Fin de funsiones globales */
-function inicio(){
-    indexPagina.style.display = 'block'
-    creacionDePerfil.style.display = 'none'
-    inicioDeSesion.style.display = 'none'
-    botonesInicio.addEventListener('click', nuevoUsuario)
-    botonCrearCuenta.addEventListener('click', sesionUsuario)
-}
 
+/* Elementos operativos */
 botonDeInicio.addEventListener('click', (event) => {
     event.preventDefault(); // Evitar que el formulario se envíe y la página se recargue
     nuevoUsuario();
 });
+
+/* funsiones operativas */
+function inicio(){
+    indexPagina.style.display = 'block'
+    creacionDePerfil.style.display = 'none'
+    inicioDeSesion.style.display = 'none'
+
+    botonCrearCuenta.addEventListener('click', nuevoUsuario)
+    botonIniciarsesion.addEventListener('click', sesionUsuario)
+}
 function nuevoUsuario(){
     indexPagina.style.display = 'none'
     creacionDePerfil.style.display = 'flex'
@@ -46,11 +47,12 @@ function nuevoUsuario(){
     let nuevo1 = new usuario(name, emailUser, passwordUser, tipo)
 
     usuarios.push(nuevo1)
-    console.log(usuarios)
     document.getElementById('formulario').reset();
-    atrasInicio()
+    
 }
 //funsiones inisio de sesion
 function sesionUsuario(){
-
+    indexPagina.style.display = 'none'
+    creacionDePerfil.style.display = 'none'
+    inicioDeSesion.style.display = 'block'
 }
