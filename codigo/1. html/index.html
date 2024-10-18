@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProTech Serve - Crea tu Perfil</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/codigo/2. css/index.css">
 </head>
 <body>
     <header>
         <div class="titulo">
-            <img id="Logo" src="/Assets ProTechServe/Logo.png" alt="Logo">
+            <img id="Logo" src="/otros/Assets ProTechServe/Logo.png" alt="Logo">
             <h1>ProTech Serve</h1>
         </div>
         <p>Conecta con profesionales y programa tus citas fácilmente</p>
@@ -22,9 +22,23 @@
     </nav>
 
     <main>
+        <!-- Inicio de pagina -->
+         <section id="index">
+            <h2>El Servicio Profesional y Técnico de Cualquier Área a tu dispocisión</h2>
+            <div id="imgInicio">
+                <img src="/otros/Assets ProTechServe/CorteBarba.jpg" alt="Corte de barba">
+                <img src="/otros/Assets ProTechServe/referenciaDentista.jpeg" alt="Destista">
+                <img src="/otros/Assets ProTechServe/Peluqueria caninajpeg.jpeg" alt="Peluqueria Canina">
+                <img src="/otros/Assets ProTechServe/reposteria-imagen-destacada-1.jpg" alt="Reposteria">
+            </div>
+            <div id="botonesInicio">
+                <button id="botonIniciarsesion" type="submit">Iniciar Sesión</button>
+                <button id="botonCrearCuenta" type="submit">Crear Cuenta</button>
+            </div>
+         </section>
         <!-- inicio de sesion -->
         <section id="inicio-de-sesion">
-            <h2>Inicio de sesión</h2>
+            <h2>¿Ya tienes cuenta?</h2>
             <form id="formulario">
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email-inicio" name="email" placeholder="Tu correo electrónico" required>
@@ -37,7 +51,6 @@
                     <option value="profesional">Profesional</option>
                     <option value="cliente">Cliente</option>
                 </select>
-                <button id="botonDeInicio" type="submit">Iniciar Sesión</button>
             </form>
         </section>
         <!-- Creacion de perfil -->
@@ -51,18 +64,23 @@
 
             <label for="password">Elabora una poderosa contraseña:</label>
             <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+            <label for="telefono">Se que es rapido, pero ¿me regalas tu numero de telefono?</label>
+            <input type="number" id="telefono" name="Telefono" placeholder="Telefono"required>
             
             <label for="tipo-perfil">Selecciona tu tipo de perfil:</label>
             <select id="tipo-perfil" name="tipo-perfil">
                 <option value="profesional">Profesional</option>
                 <option value="cliente">Cliente</option>
             </select>
+            <button id="botonDeInicio" type="submit">Crear Perfil</button>
+            <button id="atras">Atrás</button>
          </section>
     </main>
 
     <footer>
         <p>&copy; 2024 ProTech Serve. Todos los derechos reservados.</p>
     </footer>
-    <script src="/Scripts/script.js"></script>
+    <script src="/codigo/3. js/index.js"></script>
 </body>
 </html>
