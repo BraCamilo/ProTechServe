@@ -26,15 +26,23 @@
     <main>
         <aside>
             <h3>Información Relevante</h3>
+    
             <head id="headAside">
                 <h3>Mision</h3>
-                <p>Facilitar el acceso rápido y eficiente a expertos en diversas áreas, ofreciendo una plataforma intuitiva que permita a los usuarios programar citas personalizadas con profesionales certificados, mejorando la experiencia del cliente a través de herramientas de búsqueda avanzada y soporte integrado.</p>
+                <p>Facilitar el acceso rápido y eficiente a expertos en diversas áreas, ofreciendo una plataforma intuitiva
+                    que permita a los usuarios programar citas personalizadas con profesionales certificados, mejorando la
+                    experiencia del cliente a través de herramientas de búsqueda avanzada y soporte integrado.</p>
                 <h3>Nuestra Visión</h3>
-                <p>Convertirse en la plataforma líder para conectar personas con profesionales en diversas áreas, ofreciendo una experiencia fluida, segura y confiable que revolucione la manera en que se accede a servicios especializados, promoviendo la accesibilidad y satisfacción del usuario en cada interacción.</p>
+                <p>Convertirse en la plataforma líder para conectar personas con profesionales en diversas áreas, ofreciendo
+                    una experiencia fluida, segura y confiable que revolucione la manera en que se accede a servicios
+                    especializados, promoviendo la accesibilidad y satisfacción del usuario en cada interacción.</p>
             </head>
+            <div id="asideimagen">
+                <img src="/otros/Assets ProTechServe/Imagen de aside.jpg" alt="aside">
+            </div>
         </aside>
         <!-- Inicio de pagina -->
-         <section id="index">
+        <section id="index">
             <h2>El Servicio Profesional y Técnico de Cualquier Área a tu dispocisión</h2>
             <div id="imgInicio">
                 <img src="/otros/Assets ProTechServe/CorteBarba.jpg" alt="Corte de barba">
@@ -46,17 +54,17 @@
                 <button id="botonIniciarsesion" type="submit">Iniciar Sesión</button>
                 <button id="botonCrearCuenta" type="submit">Crear Cuenta</button>
             </div>
-         </section>
+        </section>
         <!-- inicio de sesion -->
         <section id="inicio-de-sesion">
             <h2>¿Ya tienes cuenta?</h2>
             <form id="formulario">
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email-inicio" name="email" placeholder="Tu correo electrónico" required>
-
+    
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password-inicio" name="password" placeholder="Contraseña" required>
-
+    
                 <label for="tipo-perfil-inicio">Selecciona tu tipo de perfil:</label>
                 <select id="tipo-perfil-inicio" name="tipo-perfil">
                     <option value="profesional">Profesional</option>
@@ -65,32 +73,91 @@
             </form>
         </section>
         <!-- Creacion de perfil -->
-         <section id="creacion-de-perfil">
+        <section id="creacion-de-perfil">
             <h2>Vamos a Crear tu Peril</h2>
             <label for="name">Nombre completo:</label>
             <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" required>
-
+    
             <label for="email">Agrega un correo:</label>
             <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-
+    
             <label for="password">Elabora una poderosa contraseña:</label>
             <input type="password" id="password" name="password" placeholder="Contraseña" required>
-
+    
             <label for="telefono">Se que es rapido, pero ¿me regalas tu numero de telefono?</label>
-            <input type="number" id="telefono" name="Telefono" placeholder="Telefono"required>
-            
+            <input type="number" id="telefono" name="Telefono" placeholder="Telefono" required>
+    
             <label for="tipo-perfil">Selecciona tu tipo de perfil:</label>
             <select id="tipo-perfil" name="tipo-perfil">
                 <option value="profesional">Profesional</option>
                 <option value="cliente">Cliente</option>
             </select>
             <button id="botonDeInicio" type="submit">Crear Perfil</button>
-         </section>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 ProTech Serve. Todos los derechos reservados.</p>
     </footer>
-    <script src="/codigo/3. js/index.js"></script>
+    <script src="/codigo/3. js/index.js">
+        /* Variables globales */
+        const creacionDePerfil = document.getElementById('creacion-de-perfil')
+        const inicioDeSesion = document.getElementById('inicio-de-sesion')
+        const indexPagina = document.getElementById('index')
+        let usuarios = []
+        /* Fin variables globales */
+
+        /* Clases */
+        class usuario {
+            constructor(nombre, correo, contrasena, tipo) {
+                this.nombre = nombre;
+                this.correo = correo;
+                this.contrasena = contrasena;
+                this.tipo = tipo;
+            }
+        }
+        /* Fin de clases */
+
+        /* Funciones globales */
+        window.addEventListener('load', inicio)
+        /* Fin de funsiones globales */
+
+        /* Elementos operativos */
+        botonDeInicio.addEventListener('click', (event) => {
+            event.preventDefault(); // Evitar que el formulario se envíe y la página se recargue
+            nuevoUsuario();
+        });
+
+        /* funsiones operativas */
+        function inicio() {
+            indexPagina.style.display = 'block'
+            creacionDePerfil.style.display = 'none'
+            inicioDeSesion.style.display = 'none'
+
+            botonCrearCuenta.addEventListener('click', nuevoUsuario)
+            botonIniciarsesion.addEventListener('click', sesionUsuario)
+        }
+        function nuevoUsuario() {
+            indexPagina.style.display = 'none'
+            creacionDePerfil.style.display = 'flex'
+
+            let name = document.getElementById('name').value;
+            let emailUser = document.getElementById('email').value;
+            let passwordUser = document.getElementById('password').value;
+            let tipo = document.getElementById('tipo-perfil').value;
+
+            let nuevo1 = new usuario(name, emailUser, passwordUser, tipo)
+
+            usuarios.push(nuevo1)
+            document.getElementById('formulario').reset();
+
+        }
+        //funsiones inisio de sesion
+        function sesionUsuario() {
+            indexPagina.style.display = 'none'
+            creacionDePerfil.style.display = 'none'
+            inicioDeSesion.style.display = 'block'
+        }
+    </script>
 </body>
 </html>

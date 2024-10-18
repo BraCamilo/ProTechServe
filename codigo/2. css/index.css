@@ -70,9 +70,14 @@ aside{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    height: 500px;
+    height: 583px;
     width: auto;
 }
+main>aside>div>img{
+    width: 500px;
+    height: 245px;
+}
+
 section {
     margin: 10px;
     align-items: center;
@@ -87,6 +92,18 @@ section {
 #creacion-de-perfil{
     display: flex;
     flex-direction: column;
+}
+main>section>label{
+    text-align: center;
+    margin: 10px;
+
+}
+main>section>input{
+    margin: 10px;
+    text-align: center;
+}
+#tipo-perfil{
+    margin: 10px;
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
