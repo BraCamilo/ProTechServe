@@ -1,15 +1,17 @@
+@import '/codigo/2.\ css/colors.css';
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--fondo);
 }
 #Logo{
     width: 50px;
 }
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--fondo);
+    color: var(--textos);
     text-align: center;
     padding: 1rem;
     position: relative;
@@ -19,12 +21,12 @@ nav {
     margin: 0;
     padding: 1rem;
     text-align: center;
-    background-color: #444;
+    background-color: var(--fondo);
     position: relative;
     z-index: 9;
 }
 nav a {
-    color: #fff;
+    color: var(--textos);
     margin: 0 1rem;
     text-decoration: none;
 }
@@ -60,8 +62,10 @@ main {
 }
 aside{
     margin: 10px;
+    background-color: var(--fondo);
+    color: var(--textos);
     align-items: center;
-    background-color: #fff;
+    background-color: var(--fondo);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -72,7 +76,8 @@ aside{
 section {
     margin: 10px;
     align-items: center;
-    background-color: #fff;
+    background-color:var(--fondo);
+    color: var(--textos);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -86,13 +91,13 @@ section {
 
 input[type="text"], input[type="email"], input[type="password"] {
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--mensajes);
     border-radius: 5px;
     margin: 5px;
 }
 h2 {
     text-align: center;
-    color: #333;
+    color: var(--textos);
 }
 form {
     display: flex;
@@ -109,18 +114,18 @@ select {
 }
 button {
     padding: 0.7rem;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--botones);
+    color: var(--textos);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #555;
+    background-color: var(--fondo);
 }
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--fondo);
+    color:var(--textos);
     text-align: center;
     padding: 1rem;
     position: relative;
