@@ -10,23 +10,32 @@ body {
     width: 50px;
 }
 header {
-    background-color: var(--fondo);
-    color: var(--textos);
+    background-color: var(--segundoFondo);
+
+    color: var(--segundoTexto);
     text-align: center;
     padding: 1rem;
     position: relative;
     z-index: 10;
 }
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+.titulo img{
+    margin: 10px;
+}
 nav {
     margin: 0;
     padding: 1rem;
     text-align: center;
-    background-color: var(--fondo);
+    background-color: var(--segundoFondo);
+    color: var(--segundoTexto);
     position: relative;
     z-index: 9;
 }
 nav a {
-    color: var(--textos);
+    color: var(--segundoTexto);
     margin: 0 1rem;
     text-decoration: none;
 }
@@ -140,8 +149,8 @@ button:hover {
     background-color: var(--fondo);
 }
 footer {
-    background-color: var(--fondo);
-    color:var(--textos);
+    background-color: var(--segundoFondo);
+    color:var(--segundoTexto);
     text-align: center;
     padding: 1rem;
     position: relative;

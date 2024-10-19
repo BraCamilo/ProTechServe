@@ -1,7 +1,25 @@
 :root{
-    --fondo: #333333;
-    --textos: #fff;
-    --botones: #00A8E8;
-    --mensajes: #FFD700;
+    --fondo: #e3e3e3;
+    --segundoFondo: #455d7a;
+    --segundoTexto: #e3e3e3;
+    --textos: #233142;
+    --botones: #f95959;
+    --mensajes: #455d7a;
     
 }
+
+/* .first-color { 
+	background: #233142; 
+}
+	
+.second-color { 
+	background: #455d7a; 
+}
+
+.third-color { 
+	background: #f95959; 
+}
+
+.fourth-color { 
+	background: #e3e3e3; 
+} */

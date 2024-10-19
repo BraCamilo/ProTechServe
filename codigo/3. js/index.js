@@ -2,6 +2,7 @@
 const creacionDePerfil = document.getElementById('creacion-de-perfil')
 const inicioDeSesion = document.getElementById('inicio-de-sesion')
 const indexPagina = document.getElementById('index')
+const asideSection = document.getElementById('asideSection')
 let usuarios = []
 /* Fin variables globales */
 
@@ -37,6 +38,7 @@ function inicio(){
 }
 function nuevoUsuario(){
     indexPagina.style.display = 'none'
+    asideSection.style.display = 'none'
     creacionDePerfil.style.display = 'flex'
 
     let name = document.getElementById('name').value;
@@ -53,6 +55,7 @@ function nuevoUsuario(){
 //funsiones inisio de sesion
 function sesionUsuario(){
     indexPagina.style.display = 'none'
+    asideSection.style.display = 'none'
     creacionDePerfil.style.display = 'none'
     inicioDeSesion.style.display = 'block'
 }
