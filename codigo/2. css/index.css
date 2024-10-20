@@ -10,13 +10,22 @@ body {
     width: 50px;
 }
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--segundoFondo);
-
     color: var(--segundoTexto);
     text-align: center;
     padding: 1rem;
     position: relative;
     z-index: 10;
+}
+header>div>div>button{
+    margin: 20px;
+}
+.botonB{
+    background-color: var(--segundoFondo);
+    color: var(--botones);
+    border: 1px solid var(--botones);
 }
 .titulo{
     display: flex;
