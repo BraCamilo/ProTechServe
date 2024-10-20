@@ -18,6 +18,7 @@ header {
     padding: 1rem;
     position: relative;
     z-index: 10;
+    align-items: center;
 }
 header>div>div>button{
     margin: 20px;
