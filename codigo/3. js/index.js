@@ -3,6 +3,11 @@ const creacionDePerfil = document.getElementById('creacion-de-perfil')
 const inicioDeSesion = document.getElementById('inicio-de-sesion')
 const indexPagina = document.getElementById('index')
 const asideSection = document.getElementById('asideSection')
+const botonAtras = document.getElementById('botonAtras')
+
+window.addEventListener('load', inicio)
+botonAtras.addEventListener('click', irAtras)
+
 let usuarios = []
 /* Fin variables globales */
 
@@ -18,7 +23,10 @@ class usuario{
 /* Fin de clases */
 
 /* Funciones globales */
-window.addEventListener('load', inicio)
+function irAtras() {
+        
+}
+
 /* Fin de funsiones globales */
 
 /* Elementos operativos */
@@ -50,6 +58,7 @@ function nuevoUsuario(){
 
     usuarios.push(nuevo1)
     document.getElementById('formulario').reset();
+    irAtras()
     
 }
 //funsiones inisio de sesion
