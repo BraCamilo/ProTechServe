@@ -51,6 +51,7 @@
                 <img src="/otros/Assets ProTechServe/Peluqueria caninajpeg.jpeg" alt="Peluqueria Canina">
                 <img src="/otros/Assets ProTechServe/reposteria-imagen-destacada-1.jpg" alt="Reposteria">
             </div>
+            <figcaption>Imagenes de referencia</figcaption>
         </section>
         <!-- inicio de sesion -->
         <section id="inicio-de-sesion">
@@ -75,16 +76,16 @@
         <section id="creacion-de-perfil">
             <h2>Vamos a Crear tu Peril</h2>
             <label for="name">Nombre completo:</label>
-            <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" required>
+            <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" autocomplete="name" required>
     
             <label for="email">Agrega un correo:</label>
-            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" autocomplete="email" required>
     
             <label for="password">Elabora una poderosa contraseña:</label>
             <input type="password" id="password" name="password" placeholder="Contraseña" required>
     
             <label for="telefono">Se que es rapido, pero ¿me regalas tu numero de telefono?</label>
-            <input type="number" id="telefono" name="Telefono" placeholder="Telefono" required>
+            <input type="number" id="telefono" name="Telefono" placeholder="Telefono" autocomplete="tel-national" required>
     
             <label for="tipo-perfil">Selecciona tu tipo de perfil:</label>
             <select id="tipo-perfil" name="tipo-perfil">
@@ -98,6 +99,7 @@
 
     <footer>
         <p>&copy; 2024 ProTech Serve. Todos los derechos reservados.</p>
+        <button id="modoOscuro">🌒</button>
     </footer>
     <script src="/codigo/3. js/index.js"></script>
 </body>
