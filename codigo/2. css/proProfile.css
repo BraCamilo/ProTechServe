@@ -1,0 +1,117 @@
+@import '/codigo/2.\ css/colors.css';
+
+/* header */
+header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--segundoFondo);
+    color: var(--segundoTexto);
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inicio img{
+    width: 50px;
+}
+/* header */
+
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Seccion de informacion de perfil */
+#perfilInfo{
+    display: flex;
+    flex-direction: column;
+
+}
+#perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+button{
+    padding: 0.7rem;
+    margin: 0.2rem;
+    background-color: var(--botones);
+    color: var(--textos);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--fondo);
+}
+.botonB{
+    color: var(--segundoTexto);
+    background-color:transparent;
+}
+.botonB:hover{
+    background-color: transparent;
+}
+#perfil p{
+    text-align: center;
+}
+#ProfileImg{
+    width: 100px;
+}
+#infoPerfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#gestorCitas{
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#ListDates{
+    display: flex;
+    flex-direction: column;
+}
+#ListDates button{
+    background-color: var(--fondo);
+    box-sizing: border-box;
+    margin: 0.5rem;
+    padding: 15px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+#ListDates button:hover{
+    background-color:var(--botones);
+}
+/* Seccion de informacion de perfil */
+/* Seccion de los servicios */
+#serviciosProfesional{
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    padding: 2.5rem;
+}
+#imagenes{
+    display: flex;
+    flex-direction: row;
+}
+.servicios{
+    padding: 1rem;
+    border-radius: 5px solid gray;
+}
+.servicios img{
+    width: 400px;
+    height: 200px;
+}
+/* Seccion de los servicios */
+/* main */
