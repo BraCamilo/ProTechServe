@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User</title>
+    <link rel="stylesheet" href="/codigo/2. css/userProfile.css">
 </head>
 <header>
-    <div>
+    <div class="inicio">
         <div class="titulo">
             <figure>
                 <a href="/codigo/1. html/index.html">
-                    <img id="Logo" style="width: 200px;" src="/otros/Assets ProTechServe/Logo.png" alt="Logo">
+                    <img id="Logo" src="/Assets ProTechServe/Img/Logo.png" alt="Logo">
                 </a>
             </figure>
             <h1>ProTech Serve</h1>
@@ -20,28 +21,60 @@
 </header>
 <body>
     <main>
-        <head>
+        <article id="cabecera">
             <figure id="secImgUser">
-                <img id="imgUser" src="/Assets ProTechServe/Img/PrileImg.png" style="width: 200px;" alt="Imagen de perfil">
+                <img id="imgUser" src="/Assets ProTechServe/Img/Foto de Perfil.webp"  alt="Imagen de perfil">
             </figure>
-            <section>
+            <section id="">
                 <h2>Nombre del Usuario</h2>
-                <button>Sesion</button>
-                <button>configuracion</button>
+                <button id='botonCita' class="botonA">configuracion</button>
+                <button class="botonB">Cerrar Sesion</button>
             </section>
-        </head>
-        <article id="gestorCitas">
-            <h3>Citas programadas</h3>
-            <ul id="ListDates">
-                <li>cita 1</li>
-                <li>cita 2</li>
-            </ul>
+            <div id="gestorCitas">
+                <h3>Citas programadas</h3>
+                <ul id="ListDates">
+                    <button>
+                        <li>Peluqueria canina | miercoles, 10 de diceimbre 2024 | 05:00 pm</li>
+                    </button>
+                    <button>
+                        <li>Barbero ManStyle | martes, 9 de diciembre 2024 | 04:30 pm</li>
+                    </button>
+                </ul>
+            </div>
         </article>
-        <section>
-            <video>
-                <source src="https://www.youtube.com/watch?v=YRGOFD2ZKHE&ab_channel=KBPTech">
-            </video>
-        </section>
+        <article id="opsCitas">
+            <h2>Mas opciones de Citas</h2>
+            <div id="opciones">
+                <div class="citas">
+                    <h3>Corte de Barba</h3>
+                    <img class="citasImg" src="/Assets ProTechServe/Img/CorteBarba.jpg" alt="userImg">
+                    <p>Obtén un corte de barba impecable que realza tus facciones y mantiene un estilo limpio y sofisticado.
+                        Nuestros expertos barberos usarán técnicas precisas para definir y dar forma a tu barba, garantizando un
+                        look perfecto que resalta tu personalidad. ¡Reserva tu cita hoy y luce tu mejor versión!</p>
+                    <button>Agendar cita</button>
+                </div>
+                <div class="citas">
+                    <h3>Peluqueria caninca</h3>
+                    <img class="citasImg" src="/Assets ProTechServe/Img/Peluqueria caninajpeg.jpeg" alt="userImg">
+                    <p>Dale a tu perro el mejor cuidado con nuestros servicios de baño profesional. Utilizamos productos de alta
+                        calidad para limpiar y acondicionar su pelaje, dejando a tu mascota fresca, suave y oliendo increíble.
+                        ¡Reserva ahora y consiente a tu mejor amigo con un baño relajante!</p>
+                    <button>Agendar cita</button>
+                </div>
+                <div class="citas">
+                    <h3>Reposteria</h3>
+                    <img class="citasImg" src="/Assets ProTechServe/Img/reposteria-imagen-destacada-1.jpg" alt="userImg">
+                    <p>Disfruta de nuestros deliciosos cupcakes, horneados con amor y decorados con esmero. Cada cupcake es una
+                        pequeña obra de arte, perfecta para cualquier ocasión. Con sabores irresistibles y una presentación
+                        encantadora, nuestros cupcakes son el toque dulce que necesitas. ¡Haz tu pedido hoy y endulza tu día!</p>
+                    <button>Agendar cita</button>
+                </div>
+            </div>
+        </article>
     </main>
+    <footer>
+        <p>&copy; 2024 ProTech Serve. Todos los derechos reservados.</p>
+        <button id="modoOscuro">🌒</button>
+    </footer>
 </body>
 </html>

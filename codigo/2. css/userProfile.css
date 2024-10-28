@@ -1,0 +1,130 @@
+@import '/codigo/2.\ css/colors.css';
+header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--segundoFondo);
+    color: var(--segundoTexto);
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+body{
+    font-size: 18;
+}
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    align-items: center;
+}
+.inicio p{
+    text-align: center;
+}
+.titulo figure img{
+    width: 2rem;
+}
+main{
+    /* display: flex; */
+    justify-content: center;
+    background-color: var(--fondo);
+}
+#cabecera{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--segundoFondo);
+    color: var(--segundoTexto);
+    box-shadow: 1px 1px gray;
+    padding: 1rem;
+    text-align: center;
+}
+button{
+    padding: 0.7rem;
+    margin: 0.2rem;
+    background-color: var(--botones);
+    color: var(--textos);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--fondo);
+}
+.botonB{
+    color: var(--segundoTexto);
+    background-color:transparent;
+}
+.botonB:hover{
+    background-color: transparent;
+}
+#cabecera figure img{
+    width: 10rem;
+}
+#contenido{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;    
+}
+#tituloMain{
+    text-align: center;
+}
+#opciones{
+    display: flex;
+    flex-direction: row;
+}
+#gestorCitas{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--segundoFondo);
+}
+#ListDates{
+    display: flex;
+    flex-direction: column;
+}
+#ListDates button{
+    background-color: var(--fondo);
+    box-sizing: border-box;
+    margin: 0.5rem;
+    padding: 15px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+#ListDates button:hover{
+    background-color:var(--botones);
+}
+/* main */
+/* opciones de citas */
+#opsCitas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.citas{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid gray;
+}
+.citasImg{
+    width: 300px;
+    height: 200px;
+}
+footer {
+    background-color: var(--segundoFondo);
+    color: var(--segundoTexto);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+#modoOscuro{
+    background-color: transparent;
+}
